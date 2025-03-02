@@ -38,6 +38,27 @@ docker-compose up -d
 npm run start:dev
 ```
 
+# Funcionalidades
+
+## Autenticación y autorización con decorador
+
+- Podemos usar el decorador `@Auth()` en cualquier endpoint que queramos que solo sea accesible para usuarios autenticados.
+- Podemos rellenar el decorador con campos de ValidRoles (configurable) para limitar los roles que pueden acceder `@Auth( ValidRoles.admin )`
+
+## Logger
+
+- Logger personalizado para mostrar mensajes de error, log, info, warn, etc. por consola.
+- También guarda los logs en archivos con rotación diara que perduran durante 2 semanas (configurable desde las variables de entorno).
+- Cuenta con una configuración (comentada) para reportar en AWS CloudWatch (útil si desplegamos la aplicación en AWS). Solo es necesario descomentarlo en el `CustomLoggerService`.
+
+## Utilidades de uso común
+
+- Dto con validación para manejar la paginación `PaginationDto`.
+
+## Base de datos
+
+- Integración por defecto con Postgres y TypeOrm (en el futuro se dará también soporte por defecto para otras bases de datos, como MongoDB o MySQL).
+
 # Quick Start
 
 Una vez desplegado el proyecto, podemos beneficiarnos de muchas funcionalidades como autenticación, autorización y logging de forma inmediata.

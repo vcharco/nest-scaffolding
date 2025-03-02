@@ -40,7 +40,7 @@ npm run start:dev
 
 # Quick Start
 
-Una vez desplegado el proyecto, podemos beneficiarnos de muchas funcionalidades como autenticación, autorización y loggin de forma inmediata.
+Una vez desplegado el proyecto, podemos beneficiarnos de muchas funcionalidades como autenticación, autorización y logging de forma inmediata.
 
 1. Comencemos creando un módulo de prueba con un controlador.
 
